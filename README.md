@@ -1,47 +1,53 @@
+# AES-128 Hardware Encryption Engine
 
-🔐 AES-128 Hardware Encryption Engine
+## Overview
 
-A high-performance AES-128 hardware encryption engine implemented using digital design principles. This project demonstrates secure and efficient encryption using the Advanced Encryption Standard (AES) algorithm in hardware.
+This project implements an AES-128 (Advanced Encryption Standard) encryption engine using hardware design principles. The design focuses on achieving secure, fast, and efficient data encryption suitable for embedded systems and FPGA-based applications.
 
-📌 Overview
+AES-128 operates on 128-bit data blocks with a 128-bit encryption key and performs 10 rounds of transformation to produce the final ciphertext.
 
-This project implements the AES-128 encryption algorithm in hardware, designed for applications requiring:
+---
 
-Fast data encryption
-Low latency
-Secure communication
-Embedded system integration
+## Features
 
-The design follows the standard AES pipeline including key expansion and multiple encryption rounds.
+- AES-128 encryption with 128-bit key support  
+- Hardware-oriented modular design  
+- High-speed and low-latency operation  
+- Synthesizable and simulation-ready code  
+- Suitable for FPGA and ASIC implementation  
+- Scalable architecture for future extensions  
 
-⚙️ Features
-✅ AES-128 Encryption (128-bit key)
-✅ Hardware-based implementation
-✅ High-speed parallel processing
-✅ Modular design (easy to extend)
-✅ Synthesizable and simulation-ready
-✅ Optimized for FPGA/ASIC design
-🧠 AES-128 Algorithm Summary
+---
 
-AES-128 operates on:
+## AES-128 Algorithm
 
-Block size: 128 bits
-Key size: 128 bits
-Number of rounds: 10
+The AES-128 encryption process includes the following steps:
 
-Each round consists of:
+- Initial AddRoundKey  
+- 9 Main Rounds:
+  - SubBytes  
+  - ShiftRows  
+  - MixColumns  
+  - AddRoundKey  
+- Final Round:
+  - SubBytes  
+  - ShiftRows  
+  - AddRoundKey  
 
-SubBytes
-ShiftRows
-MixColumns (except final round)
-AddRoundKey
-🏗️ Architecture
+---
 
-The hardware design includes the following modules:
+## Architecture
 
-Key Expansion Unit
-SubBytes (S-Box) Module
-ShiftRows Module
-MixColumns Module
-AddRoundKey Module
-Control Unit / FSM
+The design is divided into the following modules:
+
+- Top Module  
+- Key Expansion Unit  
+- SubBytes (S-Box) Module  
+- ShiftRows Module  
+- MixColumns Module  
+- AddRoundKey Module  
+- Control Unit / Finite State Machine  
+
+---
+
+## Project Structure
