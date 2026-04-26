@@ -50,4 +50,3 @@ The design is divided into the following modules:
 
 ---
 
-## Project Structure
