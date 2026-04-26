@@ -54,11 +54,11 @@ The design is divided into the following modules:
 
 ### Console Output
 
-![Console Output](docs/tcl_console.png)
+![Console Output](tcl_console.png)
 
 ### Simulation Waveform
 
-![Waveform](docs/waveform.png)
+![Waveform](waveform.png)
 
 ### Output Result
 
