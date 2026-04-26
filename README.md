@@ -50,3 +50,21 @@ The design is divided into the following modules:
 
 ---
 
+## Design and Results
+
+### Console Output
+
+![Console Output](docs/tcl_console.png)
+
+### Simulation Waveform
+
+![Waveform](docs/waveform.png)
+
+### Output Result
+
+Example encryption result:
+
+- Plaintext: `00112233445566778899aabbccddeeff`  
+- Key: `000102030405060708090a0b0c0d0e0f`  
+- Ciphertext: `69c4e0d86a7b0430d8cdb78070b4c55a`  
+
